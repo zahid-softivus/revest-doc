@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<title>Hyipo Documentation</title>
+		<link rel="shortcut icon"
+			href="assets/images/favicon.png"
+			type="image/x-icon">
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i,700,700i,900"
+			rel="stylesheet">
+		<link rel="stylesheet" type="text/css"
+			href="assets/css/fontawesome-all.min.css">
+		<link rel="stylesheet" type="text/css"
+			href="assets/css/vendor/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	</head>
+
+	<body>
+		<a href="#top" class="back-to-top"><i class="fal fa-arrow-up"></i></a>
+		<div id="component-nav"></div>
+		<div class="main-content-wrapper">
+			<div class="container-fluid">
+				<div class="main-content p-t-40">
+					<div id="component-sidebar"></div>
+					<main class="main">
+						<div class="filterable-wrapper">
+							<h1 id="start" class="mt-0">Getting Started</h1>
+							<section id="overview">
+								<h3>Overview</h3>
+								<p>We would like to thank you for choosing Hyipo. </p>
+								<p>We made Hyipo from the ground-up with flexibility in mind. Each
+									element of Hyipo
+									is extremely customizable, where you can make <br> Hyipo to reflect
+									your own
+									branding styles.</p>
+								<p> The guide gives you detailed methodologies about how you can
+									customize Hyipo and
+									make it fit your brand perfectly! </p>
+							</section>
+
+							<section id="technologies" class="m-t-60">
+								<h3>Technologies Used</h3>
+								<p>We use the following technologies</p>
+								<ul>
+									<li><strong>Laravel:</strong> version 11.0</li>
+									<li><strong>HTML:</strong> HTML5</li>
+									<li><strong>CSS:</strong> CSS3</li>
+									<li><strong>JavaScript:</strong> ES6</li>
+									<li><strong>Bootstrap:</strong> version 5.0 for Frontend</li>
+									<li><strong>Tailwind:</strong> version 3.0 for Admin Panel</li>
+									<li><strong>jQuery:</strong> version 3.6</li>
+									<li><strong>PHP:</strong> version 8.2</li>
+									<li><strong>MySQL:</strong> version 8.0</li>
+								</ul>
+							</section>
+
+							<section id="requirements" class="m-t-60">
+								<h3>Requirements to Install</h3>
+								<p>We need the following technologies to run Hyipo</p>
+								<ul>
+									<li><strong>PHP</strong> 8.2+</li>
+									<li><strong>MySQL:</strong> 8.0+</li>
+									<li>Intl PHP Extension</li>
+									<li>Curl PHP Extension</li>
+									<li>GD PHP Extension</li>
+									<li>Gettext PHP Extension</li>
+									<li>GMP PHP Extension</li>
+									<li>Mbstring PHP Extension</li>
+									<li>Exif PHP Extension</li>
+									<li>MySQL PHP Extension</li>
+									<li>Pdo_mysql PHP Extension</li>
+									<li>Zip PHP Extension</li>
+								</ul>
+							</section>
+
+							<section id="installation-on-local" class="m-t-60">
+								<h3>Installation on Local</h3>
+								<p>Follow the steps below to install Hyipo on your local machine</p>
+								<ol>
+									<li>Extract the downloaded zip file to your desired folder</li>
+									<li>Start you database server</li>
+									<img src="assets/images/screenshots/start-database.png" alt
+										class="m-t-10">
+									<li>Create a new database and keep database name for future use</li>
+									<img src="assets/images/screenshots/local-db-create.png" alt
+										class="m-t-10">
+									<li>Open your terminal and navigate to your desired folder</li>
+									<li>Run the command: <code class="copy c-pointer"
+											data-bs-toggle="tooltip" data-bs-placement="top"
+											title="Click to copy">php artisan serve --port=8000</code><span
+											class="copied d-none"> Copied</span></li>
+									<img src="assets/images/screenshots/start-local-server.png" alt
+										class="m-t-10">
+									<li>Open <a href="http://127.0.0.1:8000/installer"
+											target="_blank">http://127.0.0.1:8000/installer</a> in your
+										browser</li>
+									<li>If you are not installed project before, can see the below
+										installation wizard</li>
+									<img src="assets/images/screenshots/terms.png" alt class="m-t-10">
+									<li>Click on <strong>I Agree, Next Step</strong> button to
+										continue</li>
+									<li>In this step, You will see the <strong>Project
+											requirements</strong> page. If every requirements are met, You can
+										proceed to next step. Otherwise You may install the required extension
+										to your system</li>
+									<img src="assets/images/screenshots/requirements.png" alt
+										class="m-t-10">
+									<li>Click on <strong>Next Step</strong> button to continue</li>
+									<li>Now you will see the <strong>Foldder Permission</strong> page. If
+										permissions are ok, You can proceed to next step. Otherwise You may
+										give permissions to the folder</li>
+									<li>Click on <strong>Next Step</strong> button to continue</li>
+									<li>Now you will see the <strong>Install Information</strong> page. Put
+										the database and admin login information carefully. You may put
+										Database Host name without http or https (i.e. localhost or
+										127.0.0.1)</li>
+									<img src="assets/images/screenshots/informations.png" alt
+										class="m-t-10">
+									<li>Click on <strong>Install</strong> button. Afer successfull
+										installation, you will redirect to admin log in page</li>
+								</ol>
+							</section>
+
+							<section id="installation-on-server" class="m-t-60">
+								<h3>Installation on Server</h3>
+								<p>Follow the steps below to install Hyipo on your server</p>
+								<ol>
+									<li>Create a new database and database-user. Keep database user,
+										database name, and database password for future use</li>
+									<img src="assets/images/screenshots/create-db-name.png" alt
+										class="m-t-10">
+									<li>Upload the project zip file to the server</li>
+									<img src="assets/images/screenshots/upload-file.png" alt
+										class="m-t-10">
+									<li>Select the project zip file</li>
+									<img src="assets/images/screenshots/upload-file-select.png" alt
+										class="m-t-10">
+									<li>Extract the uploaded zip file</li>
+									<img src="assets/images/screenshots/upload-file-extract.png" alt
+										class="m-t-10">
+									<li>After the successfull extracting, you can see the below result</li>
+									<img src="assets/images/screenshots/upload-file-extract-result.png" alt
+										class="m-t-10">
+									<li>Open <a href="http://your_domain/installer"
+											target="_blank">http://your_domain/installer</a> in your browser</li>
+									<li>If everything is ok, can see the below installation wizard</li>
+									<img src="assets/images/screenshots/terms.png" alt class="m-t-10">
+									<li>Click on <strong>I Agree, Next Step</strong> button to
+										continue</li>
+									<li>In this step, You will see the <strong>Project
+											requirements</strong> page. If every requirements are met, You can
+										proceed to next step. Otherwise You may install the required extension
+										to your system</li>
+									<img src="assets/images/screenshots/requirements.png" alt
+										class="m-t-10">
+									<li>Click on <strong>Next Step</strong> button to continue</li>
+									<li>Now you will see the <strong>Foldder Permission</strong> page. If
+										permissions are ok, You can proceed to next step. Otherwise You may
+										give permissions to the folder</li>
+									<li>Click on <strong>Next Step</strong> button to continue</li>
+									<li>Now you will see the <strong>Install Information</strong> page. Put
+										the database and admin login information carefully. You may put
+										Database Host name without http or https (i.e. localhost or
+										your_domain.com)</li>
+									<img src="assets/images/screenshots/informations.png" alt
+										class="m-t-10">
+									<li>Click on <strong>Install</strong> button. Afer successfull
+										installation, you will redirect to admin log in page</li>
+								</ol>
+							</section>
+
+							<h1 id="admin">Admin Panel</h1>
+							<section id="dashboard" class="m-t-60">
+								<h3>Dashboard</h3>
+								<p>Hyipo is a complete solution for plan based investment platform. It
+									has a lot of features including user management, deposit and withdraw
+									system, user management, transaction management, admin management,
+									email notification system, report system, payment gateway management
+									and so on.</p>
+								<img src="assets/images/admin/dashboard.png" alt class="m-t-10">
+							</section>
+
+							<section id="company-setup" class="m-t-60">
+								<h3>Company Setup</h3>
+								<p>Admin can customize company's information, logo and favicon, configs,
+									social links, goole analytics, seo information, email configs, and
+									email templates</p>
+								<img src="assets/images/admin/basic-info.png" alt class="m-t-10">
+								<img src="assets/images/admin/logo-and-favicon.png" alt class="m-t-10">
+								<img src="assets/images/admin/configs.png" alt class="m-t-10">
+								<img src="assets/images/admin/social-links.png" alt class="m-t-10">
+								<img src="assets/images/admin/google-analytics.png" alt class="m-t-10">
+								<img src="assets/images/admin/seo-meta.png" alt class="m-t-10">
+								<img src="assets/images/admin/email-config.png" alt class="m-t-10">
+								<img src="assets/images/admin/email-template.png" alt class="m-t-10">
+							</section>
+
+							<section id="invest" class="m-t-60">
+								<h3>Invest</h3>
+								<p>In this section, admin can review investment requests and approve or
+									reject. Admin can also monitor running, completed and pending
+									investment. In this module, admin also inspect the invest return time
+									and other statistics</p>
+								<img src="assets/images/admin/invest.png" alt class="m-t-10">
+							</section>
+
+							<section id="withdrawals" class="m-t-60">
+								<h3>Withdrawals</h3>
+								<p>In this section, admin can review withdraw requests and approve or
+									reject.</p>
+								<img src="assets/images/admin/withdrawal.png" alt class="m-t-10">
+							</section>
+
+							<section id="user-management" class="m-t-60">
+								<h3>User Management</h3>
+								<p>In this section, admin can see a list of registered users.</p>
+								<img src="assets/images/admin/users.png" alt class="m-t-10">
+								<p>By clicking on user name or right side eye icon, admin can see user
+									details. In this section, admin can logged in as user, ban user, update
+									kyc and email verification status, and user profile information. From
+									the right side, admin can make a quick transaction (add or substract
+									balance) from user.</p>
+								<img src="assets/images/admin/user-view.png" alt class="m-t-10">
+								<p>By clicking on <strong><i>'i'</i></strong> icon, admin can see user
+									information at a glance.</p>
+								<img src="assets/images/admin/user-info.png" alt class="m-t-10">
+								<p>In the KYC pending and KYC rejected section, admin can see user kyc
+									request. Admin can preview the kyc document and approve or reject.</p>
+								<img src="assets/images/admin/kyc-unverified.png" alt class="m-t-10">
+								<p>Last section of this module is notification sending section. Admin
+									can send email notification to user by group. Available groups are all
+									users, selected users, active users, pending invest users, Closed
+									invest users, canceled invest users, Kyc verified/unverified users, and
+									many more</p>
+								<h5>Termilogies</h5>
+								<p>Skip First: Number of users skip from the selected group</p>
+								<p>Per Batch: Number of users per batch from the selected group. Email
+									sending will be done by batch by batch </p>
+								<p>Interval Between Batche: Number of seconds wait between each
+									batch</p>
+								<img src="assets/images/admin/user-notification.png" alt class="m-t-10">
+							</section>
+
+							<section id="plan-management" class="m-t-60">
+								<h3>Plan Management</h3>
+								<p>In this section, admin can create, edit and delete plans. Also admin
+									can see plan details by clicking on plan info icon from right side.</p>
+								<p>Plan time setting also found in this section. The unit time of plan
+									time is hour.</p>
+								<img src="assets/images/admin/plan.png" alt class="m-t-10">
+							</section>
+
+							<section id="ticket-management" class="m-t-60">
+								<h3>Ticket Management</h3>
+								<p>In the ticket management module, there are two sections: Open tickets
+									and Closed tickets. User cannot reply to the closed tickets any more.
+									But admin can re-open the closed tickets. In open ticket section, admin
+									can see all open tickets and reply to the tickets. The tickets are
+									sorted by its last message time. The number of each ticket right side
+									indicates the number of user message after admin reply. User and admin
+									both can attach files to each reply and download them.</p>
+								<img src="assets/images/admin/ticket.png" alt class="m-t-10">
+							</section>
+
+							<section id="referral-setting" class="m-t-60">
+								<h3>referral Setting</h3>
+								<p>In the referral module, admin can configure referral bonuses. If a
+									user referred by another user, he will get a certain amount of referral
+									bonus. Referral bonus will be given to the referred user at the time of
+									deposit, invest or interest.</p>
+								<img src="assets/images/admin/referral.png" alt class="m-t-10">
+								<p>Admin can update update bonuses of each type of event. To update,
+									admin can click on <strong><i>'Update'</i></strong> button. then put
+									the number of level to giving bonus. After click generate button, the
+									input fields are generated. Put each level bonus and click on
+									<strong><i>'Submit'</i></strong> button. The newly update bonus value
+									will replaced the old one</p>
+								<img src="assets/images/admin/referral-update.png" alt class="m-t-10">
+								<p>In the later section of this module, the referral transaction logs
+									will be shown. In this logs table, The total amount of referral bonus
+									details will be found</p>
+								<img src="assets/images/admin/referral-log.png" alt class="m-t-10">
+							</section>
+
+							<section id="user-ranking" class="m-t-60">
+								<h3>User Ranking</h3>
+								<p>In the user ranking module, admin can configure user ranking. User
+									can see their ranking and their target to fill up to achive the
+									ranking. After achive the target, user can get a certain amount of
+									bonus.</p>
+								<img src="assets/images/admin/ranking.png" alt class="m-t-10">
+								<p>Fron the right side info icon, admin can see user ranking details
+									that how many user achived this ranking, total bounus get by users, and
+									number of current users in this ranking</p>
+								<img src="assets/images/admin/ranking-info.png" alt class="m-t-10">
+							</section>
+
+							<section id="transactions" class="m-t-60">
+								<h3>Transactions</h3>
+								<p>In this section, admin can see all types of transactions that
+									happened in the system. Some transaction have a details link found by
+									the eye icon on the right side.</p>
+								<img src="assets/images/admin/transactions.png" alt class="m-t-10">
+							</section>
+
+							<section id="subscribers" class="m-t-60">
+								<h3>Subscribers</h3>
+								<p>In this module, All subscribers list will be shown. Subscriber's
+									location info will be shown if can captured by the tracker</p>
+								<img src="assets/images/admin/subscribers.png" alt class="m-t-10">
+								<p>From the upper right corner 'Send Mail' button, admin can send email
+									to all subscribers</p>
+								<img src="assets/images/admin/subscribers-send-mail.png" alt
+									class="m-t-10">
+							</section>
+
+							<section id="blog" class="m-t-60">
+								<h3>Blogs</h3>
+								<p>In this module, Admin can confugure blogs that shown on the website.
+									Admin can add, edit and delete blogs. Also it is possible to config
+									blog tags and categories.</p>
+								<img src="assets/images/admin/blogs.png" alt class="m-t-10">
+							</section>
+
+							<section id="multi-language" class="m-t-60">
+								<h3>Multi Language</h3>
+								<p>In this module, Admin can configure languages for the website. It is
+									possible to add as many languages as you want. To add new language,
+									Follow the steps below:</p>
+								<ul>
+									<li>Click on <strong><i>'Add Language'</i></strong> button from the
+										left side navigation</li>
+									<li>Download the language json file (Key) by clicking on
+										<strong><i>'Download Key'</i></strong></li>
+									<img src="assets/images/admin/language-add.png" alt class="m-t-10">
+									<li>Modify the json file as you want</li>
+									<img src="assets/images/admin/language-modify.png" alt class="m-t-10">
+									<li>Input your language name(appeared on language change dropdown),
+										Langusage key (For identifying the language uniquely), and upload the
+										modified json file by clicking on
+										<strong><i>'Language(json) file'</i></strong></li>
+									<li>Click on <strong><i>'Create'</i></strong> button to save</li>
+									<li>After saving, you can see the language list. The newly added
+										language will be shown in the list</li>
+									<li>Change the language from the dropdown to effect the changes of the
+										language</li>
+									<img src="assets/images/admin/language-modified.png" alt
+										class="m-t-10">
+								</ul>
+							</section>
+
+							<section id="kyc-setting" class="m-t-60">
+								<h3>KYC Setting</h3>
+								<p>KYC (Know your customer) is the process of verifying the identity of
+									a user. Admin can configure KYC setting. Admin can take the information
+									from user and verify it. If KYC Verification is active in
+									<strong>Company Setup -> System Configs</strong> module and User is not
+									kyc verified then user cannot make any transaction even get access to
+									the dashboard in the system. </p>
+								<img src="assets/images/admin/kyc.png" alt class="m-t-10">
+								<p>To add/modify the KYC form, Follow the steps below:</p>
+								<ul>
+									<li>Click the <strong><i>'Add Field'</i></strong> button from the left
+										side navigation</li>
+									<li>Input the field name, field type, and options related to the field
+										type.</li>
+									<li>The Is Required option will be checked if the field is
+										required</li>
+									<li>Field Status will be checked if the field is display in the
+										form</li>
+									<img src="assets/images/admin/kyc-add.png" alt class="m-t-10">
+									<li>Click the <strong><i>'Create'</i></strong> button to save</li>
+									<li>After saving, you can see the list of fields. The newly added field
+										will be shown in the list</li>
+								</ul>
+							</section>
+
+							<section id="payment-gateways" class="m-t-60">
+								<h3>Payment Gateway</h3>
+								<p>In this module, Admin can configure automated payment gateways. Admin
+									can modify Active/Inactive status, config the gateway charges,
+									transaction limits and other settings.</p>
+								<img src="assets/images/admin/gateway.png" alt class="m-t-10">
+								<p>To modify the gateway configurations, Follow the steps below:</p>
+								<ul>
+									<li>Click the <strong><i>'Edit icon'</i></strong> button</li>
+									<li>Input the configs related to the gateway.</li>
+									<li>The Is Required option will be checked if the field is
+										required</li>
+									<li>Field Status will be checked if the field is display in the
+										form</li>
+									<img src="assets/images/admin/gateway-config.png" alt class="m-t-10">
+									<li>Click the <strong><i>'Update'</i></strong> button to save</li>
+									<li>After saving, the gateway will work as expected</li>
+								</ul>
+							</section>
+
+							<section id="cronjob-setting" class="m-t-60">
+								<h3>Cronjob Setting</h3>
+								<p>Cronjob is very useful for the automated tasks. To give the plan
+									interest at right time, you must configure cronjob. Currently there are
+									two cronjob types: <strong>Ranking</strong>, and
+									<strong>Interest</strong>.
+								</p>
+								<ul>
+									<li><strong>Ranking</strong> is used to update ranking of users</li>
+									<li><strong>Interest</strong> is used to give plan interest</li>
+								</ul>
+								<p>The ideal cronjob schedule is once per 5 minute. Once per minute is
+									the best</p>
+								<img src="assets/images/admin/cronjob.png" alt class="m-t-10">
+								<p>You can see the cronjob logs in the <strong>Cronjob Logs</strong>
+									page</p>
+								<img src="assets/images/admin/cronjob-log.png" alt class="m-t-10">
+							</section>
+
+							<section id="contacts" class="m-t-60">
+								<h3>Contacts</h3>
+								<p>Contacts is the list of inquiry submitted from the frontend contact
+									page.</p>
+								<img src="assets/images/admin/contact-form.png" alt class="m-t-10">
+								<p>Admin can send email to all contacts by the
+									<strong>'Send Email'</strong> button</p>
+								<img src="assets/images/admin/contact.png" alt class="m-t-10">
+								<img src="assets/images/admin/contact-sendmail.png" alt class="m-t-10">
+							</section>
+
+							<section id="section-management" class="m-t-60">
+								<h3>Section Management</h3>
+								<p>Section is the components of the frontend pages. If you want to
+									modify the section content for your website your can do that from
+									here</p>
+								<p>Multiple pages has the same section. Suppose you change to the about
+									section, All the pages which has about section will be affected.</p>
+								<ul>
+									<li>Banner Section</li>
+									<img src="assets/images/admin/section-banner.png" alt class="m-t-10">
+									<li>Statistic Section</li>
+									<img src="assets/images/admin/section-statistic.png" alt
+										class="m-t-10">
+									<li>About Section</li>
+									<img src="assets/images/admin/section-about.png" alt class="m-t-10">
+									<li>Feature Section</li>
+									<img src="assets/images/admin/section-feature.png" alt class="m-t-10">
+									<li>Work Section</li>
+									<img src="assets/images/admin/section-work.png" alt class="m-t-10">
+									<li>Investment Section</li>
+									<img src="assets/images/admin/section-investment.png" alt
+										class="m-t-10">
+									<li>Activity Section</li>
+									<img src="assets/images/admin/section-activity.png" alt class="m-t-10">
+									<li>Affiliate Section</li>
+									<img src="assets/images/admin/section-affiliate.png" alt
+										class="m-t-10">
+									<li>Team Section</li>
+									<img src="assets/images/admin/section-team.png" alt class="m-t-10">
+									<li>FAQ Section</li>
+									<img src="assets/images/admin/section-faq.png" alt class="m-t-10">
+									<li>Testimonial Section</li>
+									<img src="assets/images/admin/section-testimonial.png" alt
+										class="m-t-10">
+									<li>Help Section</li>
+									<img src="assets/images/admin/section-help.png" alt class="m-t-10">
+									<li>Mission Section</li>
+									<img src="assets/images/admin/section-mission.png" alt class="m-t-10">
+									<li>Subscribe Section</li>
+									<img src="assets/images/admin/section-subscribe.png" alt
+										class="m-t-10">
+									<li>Join Section</li>
+									<img src="assets/images/admin/section-join.png" alt class="m-t-10">
+									<li>Refer Section</li>
+									<img src="assets/images/admin/section-refer.png" alt class="m-t-10">
+									<li>Accessible Section</li>
+									<img src="assets/images/admin/section-accessible.png" alt
+										class="m-t-10">
+									<li>Earning Section</li>
+									<img src="assets/images/admin/section-earning.png" alt class="m-t-10">
+									<li>Call Us Section</li>
+									<img src="assets/images/admin/section-callus.png" alt class="m-t-10">
+									<li>Payment Section</li>
+									<img src="assets/images/admin/section-payment.png" alt class="m-t-10">
+									<li>Invest to Build Section</li>
+									<img src="assets/images/admin/section-investtobuild.png" alt
+										class="m-t-10">
+								</ul>
+							</section>
+
+							<section id="section-statuses" class="m-t-60">
+								<h3>Section Status</h3>
+								<p>Admin can change the status of the section. If section status is
+									inactive, the section will not be displayed on the frontend</p>
+								<img src="assets/images/admin/section-statuses.png" alt class="m-t-10">
+							</section>
+
+							<section id="faq-management" class="m-t-60">
+								<h3>FAQ Management</h3>
+								<p>Admin can customize FAQs (Frequently Asked Questions) which is
+									displayed on the frontend. Admin can also change the status of the FAQ.
+									If FAQ status is inactive, the FAQ will not be displayed on the
+									frontend. Also FAQ categories can be added from category section.</p>
+								<img src="assets/images/admin/faq-list.png" alt class="m-t-10">
+								<p>Frontend FAQ page </p>
+								<img src="assets/images/admin/faq-frontend.png" alt class="m-t-10">
+								<p>NB: All other pages except FAQ page's faq list will display from the
+									first category of the faq.</p>
+							</section>
+
+							<section id="terms-and-conditions" class="m-t-60">
+								<h3>Terms and Conditions</h3>
+								<p>Admin can customize Terms and Conditions which is displayed on the
+									frontend terms and conditions page.</p>
+								<img src="assets/images/admin/terms-and-condition-admin.png" alt
+									class="m-t-10">
+								<p>Frontend Terms and Conditions page </p>
+								<img src="assets/images/admin/terms-and-condition.png" alt
+									class="m-t-10">
+							</section>
+
+							<h1 id="user">User Dashboard</h1>
+							<section id="user-dashboard" class="m-t-60">
+								<h3>Home</h3>
+								<p>User can see their account balance, total deposits and withdrawals,
+									current ranking and target to fill up to achive the ranking.</p>
+								<img src="assets/images/admin/dashboard-home.png" alt class="m-t-10">
+							</section>
+
+							<section id="user-make-deposit" class="m-t-60">
+								<h3>User Deposit</h3>
+								<p>To make a deposit, follow the steps below:</p>
+								<ul>
+									<li>Go to User Dashboard</li>
+									<li>Click the <strong><i>'Make Deposit'</i></strong> button from the
+										left side navigation</li>
+									<li>Enter the deposit amount</li>
+									<li>Select the payment method</li>
+									<li>You can see the charges and limitations of the payment method</li>
+									<img src="assets/images/admin/user-deposit.png" alt class="m-t-10">
+									<li>Click the <strong><i>'Deposit now'</i></strong> button if
+										everything is correct</li>
+									<li>You will redirect to the payment page of the selected payment
+										method</li>
+									<img src="assets/images/admin/user-gateway-pay.png" alt class="m-t-10">
+									<li>Put your credit card details and click on <strong><i>'Pay Now'</i></strong></li>
+									<li>If payment is successful, you will redirect to the user dashboard. You can see the success message</li>
+								</ul>
+							</section>
+
+							<section id="user-invest" class="m-t-60">
+								<h3>Invest</h3>
+								<p>To invest, follow the steps below:</p>
+								<ul>
+									<li>Go to User Dashboard</li>
+									<li>Click the <strong><i>'Invest'</i></strong> button from the
+										left side navigation</li>
+									<li>Select your desired plan which you want to invest</li>
+									<li>Select the payment method</li>
+									<li>Enter the Invest amount</li>
+									<li>You can see the charges and limitations of the payment method</li>
+									<img src="assets/images/admin/user-deposit.png" alt class="m-t-10">
+									<li>Click the <strong><i>'Deposit now'</i></strong> button if
+										everything is correct</li>
+									<li>You will redirect to the payment page of the selected payment
+										method</li>
+									<img src="assets/images/admin/user-gateway-pay.png" alt class="m-t-10">
+									<li>Put your credit card details and click on <strong><i>'Pay Now'</i></strong></li>
+									<li>If payment is successful, you will redirect to the user dashboard. You can see the success message</li>
+								</ul>
+							</section>
+
+							<section id="user-withdraw" class="m-t-60">
+								<h3>Withdraw</h3>
+								<p>To Withdraw from your account, follow the steps below:</p>
+								<ul>
+									<li>Go to User Dashboard</li>
+									<li>Click the <strong><i>'Withdraw'</i></strong> button from the
+										left side navigation</li>
+									<li>Select your wallet (Main/Interest). Wallet amount will be shown along with the wallet name</li>
+									<li>Select the withdraw method</li>
+									<li>Enter the withdraw amount</li>
+									<li>You can see the charges and limitations of the withdraw method</li>
+									<img src="assets/images/admin/user-withdrawal-1.png" alt class="m-t-10">
+									<li>Click the <strong><i>'Confirm and Next'</i></strong> button if
+										everything is correct</li>
+									<li>You will redirect to the withdraw gateway information page of the selected withdraw method </li>
+									<img src="assets/images/admin/user-withdrawal-2.png" alt class="m-t-10">
+									<li>Put the necessary information and click on <strong><i>'Submit Withdraw'</i></strong> button</li>
+									<li>If everything is correct, you will redirect to the dashboard home page and see the success message</li>
+									<li>Admin will review the withdraw request and take necessary action accordingly</li>
+								</ul>
+							</section>
+
+							<section id="user-referrals" class="m-t-60">
+								<h3>Referrals</h3>
+								<p>Referral is a way to earn money by promoting your friends. Any user who referred by another user will get a certain amount of referral bonus. Referral bonus will be given to the referred user at the time of deposit, invest or interest.</p>
+								<p>Referral system works like a chaining system. The users who are directly referred by you is the first level referral user. The users who are referred by the first level user is the second level and so on. It is possible to refer unlimited times and gain unlimited referral bonus.</p>
+								<p>To get referral bonus, you must:-</p>
+								<ul>
+									<li>Referred to another user</li>
+									<li>You can get referral links from your dashboard referrals section. Copy and share the link with your friends or family</li>
+									<li>You can also share the referral link to the social media (Facebook, Twitter, etc.) by clicking on the share button.</li>
+									<li>You will get a referral bonus at the time of the referred user deposit, interest, or invest</li>
+									<img src="assets/images/admin/user-referrals.png" alt class="m-t-10">
+									<li>You will see the total referral bonus logs at dashboard referral section</li>
+								</ul>
+							</section>
+
+							<section id="user-transaction" class="m-t-60">
+								<h3>Transactions</h3>
+								<p>This is the list of transactions that happened in the system for the user.</p>
+								<p>You can filter the transactions by date or type</p>
+								<img src="assets/images/admin/user-transaction.png" alt class="m-t-10">
+							</section>
+
+							<section id="user-edit-profile" class="m-t-60">
+								<h3>Edit Profile</h3>
+								<p>In this section, user can edit their profile information. Also user can change their password.</p>
+								<img src="assets/images/admin/user-profile.png" alt class="m-t-10">
+							</section>
+
+							<section id="user-support-ticket" class="m-t-60">
+								<h3>Support Ticket</h3>
+								<p>In this section, user can create support ticket. Admin can reply to the support ticket. If a user closed the ticket, they cannot reopen it again but can view the replies. Admin can also close the ticket.</p>
+								<img src="assets/images/admin/user-ticket.png" alt class="m-t-10">
+								<p>User and admin both can attach files to each reply and download them. </p>
+								<img src="assets/images/admin/user-ticket-message.png" alt="" class="m-t-10">
+							</section>
+
+							<section id="user-logout" class="m-t-60">
+								<h3>Logout</h3>
+								<p>The logout button is located at the bottom of the user dashboard's side navigation menu.</p>
+								<p>By clicking on the logout button, user will be logged out from the system and redirected to the frontend homepage</p>
+								<img src="assets/images/admin/user-ticket.png" alt class="m-t-10">
+								<p>User and admin both can attach files to each reply and download them. </p>
+								<img src="assets/images/admin/user-ticket-message.png" alt="" class="m-t-10">
+							</section>
+
+							<section id="section-5">
+								<h3>5. Support</h3>
+								<h4>Support Scope</h4>
+								<p><strong>Included in Free Support Scope:</strong></p>
+								<ul>
+									<li>Fixing bugs</li>
+									<li>Helping clients in changing site contents by sending instructions
+										that couldn’t be
+										covered by documentation</li>
+								</ul>
+								<p><strong><strong style="color:red">NOT</strong> Included in Free
+										Support Scope:</strong>
+								</p>
+								<ul>
+									<li>Any type of custom changes</li>
+									<li>Any type of request to update clients’ site contents</li>
+								</ul>
+								<p><strong>Paid Support Scope:</strong></p>
+								<p>Paid support is not a part of Free Support when you purchase the
+									template from themeforest.
+									We understand that some clients need custom changes while using our
+									template. For that we
+									kept an option for paid support which includes:</p>
+								<ul>
+									<li>Custom change request</li>
+									<li>Custom pages</li>
+									<li>Custom features</li>
+								</ul>
+								<p>We kept a flat rate for our paid support which is $35/hour.</p>
+
+								<h4>Support Ticket</h4>
+								<p>Please send your support request here: <a target="_blank"
+										href="https://themeforest.net/user/pixelaxis/portfolio">Support
+										Request</a>. You will response within 1
+									business day.</p>
+							</section>
+
+							<section>
+								<p style="color:#5cff5c">Regards,
+									<br>Pixelaxis Support Team</p>
+							</section>
+						</div>
+					</main>
+				</div>
+			</div>
+		</div>
+		<footer class="page-footer">
+			<div class="container-fluid ">
+				<p class="text-center">Copyright © <a href="javascript:void(0)">Hyipo</a> |
+					Designed by <a href="https://themeforest.net/user/pixelaxis/portfolio"
+						class="company">pixelaxis</a></p>
+			</div>
+		</footer>
+
+		<!-- Javascripts
+    	======================================= -->
+		<!-- jQuery -->
+		<script src="assets/js/vendor/jquery.min.js"></script>
+		<script src="assets/js/vendor/jquery-migrate.min.js"></script>
+		<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/vendor/easing-1.3.js"></script>
+		<!-- Custom Script -->
+		<script src="assets/js/main.js"></script>
+	</body>
+
+</html>
