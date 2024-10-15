@@ -89,7 +89,7 @@
 
 	_document.on("keyup", ".search-input", function () {
 		var value = $(this).val().toLowerCase();
-		$(".sidebar-navigation ol *").filter(function () {
+		$(".sidebar-navigation ul li").filter(function () {
 			$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
 		});
 	});
